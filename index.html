@@ -15,8 +15,8 @@
     <link rel=apple-touch-icon-precomposed href=lib/image/apple-touch-icon-precomposed.png>
     <link rel=author href=https://plus.google.com/+anatasofwirapraja>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="http://anatasof.xyz/lib/image/avatar.jpg"/>
-    <meta property="og:image:secure_url" content="http://anatasof.xyz/lib/image/avatar.jpg"/>
+    <meta property="og:image" content=lib/image/avatar.jpg/>
+    <meta property="og:image:secure_url" content=lib/image/avatar.jpg/>
     <meta property="og:image:type" content="image/jpeg"/>
     <meta property="og:image:width" content="512"/>
     <meta property="og:image:height" content="512"/>
@@ -46,7 +46,7 @@
         .content p{width:256px;text-align:center;margin:16px auto;}
         @media only screen and (max-width:360px){.content p{margin:8px;}
         }
-        .avatar{width:128px;height:128px;background:url(lib/image/avatar.jpg);background-size:cover;border-radius:50%;background-color:#525252;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;border:2px solid #ddd;}
+        .avatar{width:128px;height:128px;background:url('lib/image/avatar.jpg');background-size:cover;border-radius:50%;background-color:#525252;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;border:2px solid #ddd;}
         @media only screen and (max-width:360px){.avatar{width:96px;height:96px;}
         }
         @media only screen and (max-width:360px){.avatar{border:4px solid #fff;}
@@ -59,10 +59,10 @@
         .icons a:after{content:'';position:absolute;left:0;top:0;right:0;bottom:0;background-repeat:no-repeat;background-position:50% 50%;background-size:32px 32px;}
         @media only screen and (max-width:360px){.icons a:after{background-size:24px 24px;}
         }
-        .icons .twitter:after{background-image:url(lib/image/twitter.svg);}
-        .icons .dribbble:after{background-image:url(lib/image/dribbble.svg);}
-        .icons .google-plus:after{background-image:url(lib/image/google-plus.svg);}
-        .icons .linkedin:after{background-image:url(lib/image/linkedin.svg);}
+        .icons .twitter:after{background-image:url("lib/image/twitter.svg");}
+        .icons .dribbble:after{background-image:url("lib/image/dribbble.svg");}
+        .icons .google-plus:after{background-image:url("lib/image/google-plus.svg");}
+        .icons .linkedin:after{background-image:url("lib/image/linkedin.svg");}
     </style>
 </head>
 <body>
@@ -71,17 +71,17 @@
         <div class=content>
             <div class=avatar></div>
             <p>Anatasof Wirapraja</p>
-            <p>Entrepreneur and UX Padawan at <a href="http://kudo.co.id">Kudo</a>.</p>
+            <p>Entrepreneur and UX Padawan at <a href=http://kudo.co.id>Kudo</a>.</p>
             <div class=icons>
-                <a rel=me href="https://id.linkedin.com/in/anatasofwirapraja" title=linkedin class=linkedin></a> 
-                <a rel=me href=https://twitter.com/anatasof title="Twitter" class=twitter></a>
+                <a rel=me href=https://id.linkedin.com/in/anatasofwirapraja title=linkedin class=linkedin></a> 
+                <a rel=me href=https://twitter.com/anatasof title=Twitter class=twitter></a>
                 <a rel=me href=https://plus.google.com/+AnatasofWirapraja/posts title=google-plus class=google-plus></a>
-                <a rel=me href=https://dribbble.com/anata title="Dribbble" class=dribbble></a>
+                <a rel=me href=https://dribbble.com/anata title=Dribbble class=dribbble></a>
             </div>
         </div>
     </div>
     <div class=bottom></div>
-    <script src=lib/script/jquery-3.1.0.js></script>
+    <script src=lib/script/jquery-3.1.0.min.js></script>
     <script type="text/javascript">
         WebFontConfig = {
             google: { families: [ 'Roboto+Mono:400,500:latin' ] }
